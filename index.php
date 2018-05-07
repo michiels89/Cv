@@ -1,3 +1,12 @@
+<?php 
+
+if(isset($_GET['action']) && $_GET['action'] == 'download'){
+header('Content-disposition:attachment; filename=English_Cv_Michiels_Lynn.pdf');
+header('Content-type:application/pdf');
+readfile('files/English_Cv_Michiels_Lynn.pdf');
+   download('files/English_Cv_Michiels_Lynn');
+    }
+    ?>
 <!DOCTYPE html>
 <!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
@@ -7,7 +16,7 @@
    <!--- Basic Page Needs
    ================================================== -->
    <meta charset="utf-8">
-	<title>Ceevee - Free Responsive HTML5/CSS3 Template</title>
+	<title>Cv Michiels Lynn </title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 
@@ -97,12 +106,7 @@
 
             <h2>About Me</h2>
 
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-            voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-            voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-            sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-            Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.
+            <p>After having worked in the healthcare sector, I’m ready for a career change. In my spare time I learned byself study, discovered different programming languages and I was very excited to learn more about them. I wanted to expand this knowledge and with this motivation,I started a practice-oriented training course PHP developer at VDAB HAASRODE.Programming means to me create something that people can use in a clear andintuitive way. I’m looking forward to get started as a junior PHP developer.
             </p>
 
             <div class="row">
@@ -111,19 +115,19 @@
 
                   <h2>Contact Details</h2>
                   <p class="address">
-						   <span>Jonathan Doe</span><br>
-						   <span>1600 Amphitheatre Parkway<br>
-						         Mountain View, CA 94043 US
+						   <span>Lynn Michiels</span><br>
+						   <span>Mereldreef 1<br>
+						         3220 Holsbeek
                      </span><br>
-						   <span>(123)456-7890</span><br>
-                     <span>anyone@website.com</span>
+						   <span>+32 489 114526</span><br>
+                     <span>michiels89@hotmail.com</span>
 					   </p>
 
                </div>
 
                <div class="columns download">
                   <p>
-                     <a href="#" class="button"><i class="fa fa-download"></i>Download Resume</a>
+                     <a href="index.php?action=download" class="button"><i class="fa fa-download"></i>Download Resume</a>
                   </p>
                </div>
 
@@ -136,148 +140,244 @@
    </section> <!-- About Section End-->
 
 
-   <!-- Resume Section
-   ================================================== -->
-   <section id="resume">
+    <!-- Resume Section -->
+    <section id="resume" class="resume-section section-padding">
+        <div class="container">
+            <h2 class="section-title wow fadeInUp">Resume</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="resume-title">
+                        <h3>Education</h3>
+                    </div>
+                    <div class="resume">
+                        <ul class="timeline">
+                            <li>
+                                <div class="posted-date">
+                                    <span class="month">2007-2011</span>
+                                </div><!-- /posted-date -->
 
-      <!-- Education
-      ----------------------------------------------- -->
-      <div class="row education">
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>Bachelor degree certificate</h3>
+                                            <span>BA(Hons) in UI Engineering, Arts University, Pabna, USA</span>
+                                        </div><!-- /timeline-heading -->
 
-         <div class="three columns header-col">
-            <h1><span>Education</span></h1>
-         </div>
+                                        <div class="timeline-body">
+                                            <p>I have completed UI Engineering degree from ABC University, Boston, USA at feel the charm of existence in this spot, which was creat.</p>
+                                        </div><!-- /timeline-body -->
+                                    </div> <!-- /timeline-content -->
+                                </div><!-- /timeline-panel -->
+                            </li>
 
-         <div class="nine columns main-col">
+                            <li class="timeline-inverted">
+                                <div class="posted-date">
+                                    <span class="month">2004-2006</span>
+                                </div><!-- /posted-date -->
 
-            <div class="row item">
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>Higher Secondary certificate</h3>
+                                            <span>Typography Arts, FA College, New York, USA</span>
+                                        </div><!-- /timeline-heading -->
 
-               <div class="twelve columns">
+                                        <div class="timeline-body">
+                                            <p>From this college of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+                                        </div><!-- /timeline-body -->
+                                    </div> <!-- /timeline-content -->
+                                </div> <!-- /timeline-panel -->
+                            </li>
 
-                  <h3>University of Life</h3>
-                  <p class="info">Master in Graphic Design <span>&bull;</span> <em class="date">April 2007</em></p>
+                            <li>
+                                <div class="posted-date">
+                                  <span class="month">2000-2003</span>
+                                </div><!-- /posted-date -->
 
-                  <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                  ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                  Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis pretium.
-                  </p>
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>Secondary school certificate</h3>
+                                            <span>Creative Arts, Julius Jr. school, USA</span>
+                                        </div><!-- /timeline-heading -->
 
-               </div>
+                                        <div class="timeline-body">
+                                            <p>I was awesome at arts, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy.</p>
+                                        </div><!-- /timeline-body -->
+                                    </div> <!-- /timeline-content -->
+                                </div><!-- /timeline-panel -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- /row -->
 
-            </div> <!-- item end -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="resume-title">
+                        <h3>Experience</h3>
+                    </div>
+                    <div class="resume">
+                        <ul class="timeline">
+                            <li class="timeline-inverted">
+                                <div class="posted-date">
+                                  <span class="month">2011-2013</span>
+                                </div><!-- /posted-date -->
 
-            <div class="row item">
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>Junior ui designer</h3>
+                                            <span>XYZ Design Home, One Street, Boston</span>
+                                        </div><!-- /timeline-heading -->
 
-               <div class="twelve columns">
+                                        <div class="timeline-body">
+                                            <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+                                        </div><!-- /timeline-body -->
+                                    </div> <!-- /timeline-content -->
+                                </div> <!-- /timeline-panel -->
+                            </li>
 
-                  <h3>School of Cool Designers</h3>
-                  <p class="info">B.A. Degree in Graphic Design <span>&bull;</span> <em class="date">March 2003</em></p>
+                            <li>
+                                <div class="posted-date">
+                                  <span class="month">2013-2015</span>
+                                </div><!-- /posted-date -->
 
-                  <p>
-                  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                  Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                  nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
-                  ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat
-                  </p>
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>Lead UX Consultant</h3>
+                                            <span>Lucky8 Designing Firm, California</span>
+                                        </div><!-- /timeline-heading -->
 
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Education -->
-
-
-      <!-- Work
-      ----------------------------------------------- -->
-      <div class="row work">
-
-         <div class="three columns header-col">
-            <h1><span>Work</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Awesome Design Studio</h3>
-                  <p class="info">Senior UX Designer <span>&bull;</span> <em class="date">March 2010 - Present</em></p>
-
-                  <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                  ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                  Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis pretium.
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Super Cool Studio</h3>
-                  <p class="info">UX Designer <span>&bull;</span> <em class="date">March 2007 - February 2010</em></p>
-
-                  <p>
-                  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                  Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                  nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
-                  ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Work -->
-
-
-      <!-- Skills
-      ----------------------------------------------- -->
-      <div class="row skill">
-
-         <div class="three columns header-col">
-            <h1><span>Skills</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-            voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-            voluptatem sequi nesciunt.
-            </p>
-
-				<div class="bars">
-
-				   <ul class="skills">
-					   <li><span class="bar-expand photoshop"></span><em>Photoshop</em></li>
-                  <li><span class="bar-expand illustrator"></span><em>Illustrator</em></li>
-						<li><span class="bar-expand wordpress"></span><em>Wordpress</em></li>
-						<li><span class="bar-expand css"></span><em>CSS</em></li>
-						<li><span class="bar-expand html5"></span><em>HTML5</em></li>
-                  <li><span class="bar-expand jquery"></span><em>jQuery</em></li>
-					</ul>
-
-				</div><!-- end skill-bars -->
-
-			</div> <!-- main-col end -->
-
-      </div> <!-- End skills -->
-
-   </section> <!-- Resume Section End-->
+                                        <div class="timeline-body">
+                                            <p>Completely provide access to seamless manufactured products before functionalized synergy. Progressively redefine competitive.</p>
+                                        </div><!-- /timeline-body -->
+                                    </div> <!-- /timeline-content -->
+                                </div><!-- /timeline-panel -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- /row -->
+        </div><!-- /.container -->
+    </section><!-- End Resume Section -->
 
 
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section section-padding">
+      <div class="container">
+        <h2 class="section-title wow fadeInUp">Skills</h2>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="skill-progress">
+              <div class="skill-title"><h3>UX Design</h3></div> 
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" ><span>95%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Visual Design</h3></div> 
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" ><span>80%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Business Design</h3></div>  
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" ><span>75%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+          </div><!-- /.col-md-6 -->
+
+          <div class="col-md-6">
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Branding Design</h3></div> 
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" ><span>95%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Motion Graphic</h3></div> 
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" ><span>80%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Flyers Designing</h3></div>  
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" ><span>75%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+          </div><!-- /.col-md-6 -->
+        </div><!-- /.row -->
+
+        <div class="skill-chart text-center">
+          <h3>More skills</h3>
+        </div>
+          
+        <div class="row more-skill text-center">
+          <div class="col-xs-12 col-sm-4 col-md-2">
+              <div class="chart" data-percent="91" data-color="e74c3c">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                      <span>leadership</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+              <div class="chart" data-percent="23" data-color="2ecc71">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                      <span>Creativity</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+              <div class="chart" data-percent="68" data-color="3498db">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                      <span>Management</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+              <div class="chart" data-percent="68" data-color="3498db">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                      <span>Branding</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+              <div class="chart" data-percent="68" data-color="3498db">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                      <span>Marketing</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+              <div class="chart" data-percent="68" data-color="3498db">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                      <span>Motivation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      </div><!-- /.container -->
+    </section><!-- End Skills Section -->
+    
    <!-- Portfolio Section
    ================================================== -->
    <section id="portfolio">
