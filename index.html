@@ -1,12 +1,4 @@
-<?php 
 
-if(isset($_GET['action']) && $_GET['action'] == 'download'){
-header('Content-disposition:attachment; filename=English_Cv_Michiels_Lynn.pdf');
-header('Content-type:application/pdf');
-readfile('files/English_Cv_Michiels_Lynn.pdf');
-   download('files/English_Cv_Michiels_Lynn');
-    }
-    ?>
 <!DOCTYPE html>
 <!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
@@ -15,25 +7,34 @@ readfile('files/English_Cv_Michiels_Lynn.pdf');
 
    <!--- Basic Page Needs
    ================================================== -->
-   <meta charset="utf-8">
-	<title>Cv Michiels Lynn </title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+    <meta charset="utf-8">
+
+	<meta name="description" content="Responsive resume Michiels Lynn">
+    <meta name="keywords" content="onepage, resume, CV, HTML, CSS, Bootstrap, PHP">
+	<meta name="author" content="Michiels Lynn">
+	<title>Resume Michiels Lynn </title>
+
 
    <!-- Mobile Specific Metas
    ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+	
+	<!-- Bootstrap core CSS 
+	==================================================-->
+	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 
 	<!-- CSS
     ================================================== -->
    <link rel="stylesheet" href="css/default.css">
-	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/animate.css">
    <link rel="stylesheet" href="css/media-queries.css">
    <link rel="stylesheet" href="css/magnific-popup.css">
 
    <!-- Script
    ================================================== -->
-	<script src="js/modernizr.js"></script>
+<!--	<script src="js/modernizr.js"></script>-->
 
    <!-- Favicons
 	================================================== -->
@@ -67,7 +68,7 @@ readfile('files/English_Cv_Michiels_Lynn.pdf');
          <div class="banner-text">
             <h1 class="responsive-headline">Hello!</h1>
             <h2 class="responsive-headline">I'm Lynn Michiels.</h2>
-            <h3>I'm a Holsbeek based <span>webdesigner</span>/ <span>-developer</span> creating awesome and
+            <h3>I'm a Holsbeek based <span>Junior webdesigner</span>/ <span>-developer</span> creating awesome and
             effective websites for companies of all sizes around the globe. Let's <a class="smoothscroll" href="#about">start scrolling</a>
             and learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
             <hr />
@@ -127,7 +128,7 @@ readfile('files/English_Cv_Michiels_Lynn.pdf');
 
                <div class="columns download">
                   <p>
-                     <a href="index.php?action=download" class="button"><i class="fa fa-download"></i>Download Resume</a>
+                     <a href="inc/sendEmail.php?action=download" class="button"><i class="fa fa-download"></i>Download Resume</a>
                   </p>
                </div>
 
@@ -699,9 +700,9 @@ readfile('files/English_Cv_Michiels_Lynn.pdf');
 
                      <li>
                         <blockquote>
-                           <p>Your work is going to fill a large part of your life, and the only way to be truly satisfied is
+                           <p>"Your work is going to fill a large part of your life, and the only way to be truly satisfied is
                            to do what you believe is great work. And the only way to do great work is to love what you do.
-                           If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it.
+                           If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it."
                            </p>
                            <cite>Steve Jobs</cite>
                         </blockquote>
@@ -709,11 +710,9 @@ readfile('files/English_Cv_Michiels_Lynn.pdf');
 
                      <li>
                         <blockquote>
-                           <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                           Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                           nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+                           <p>"There is no end to education. It is not that you read a book, pass an examination, and finish with education. The whole of life, from the moment you are born to the moment you die, is a process of learning."
                            </p>
-                           <cite>Mr. Adobe</cite>
+                           <cite>Jiddu Krishnamurti</cite>
                         </blockquote>
                      </li> <!-- slide ends -->
 
@@ -807,14 +806,21 @@ readfile('files/English_Cv_Michiels_Lynn.pdf');
 
 					   <h4>Address and Phone</h4>
 					   <p class="address">
-						   Jonathan Doe<br>
-						   1600 Amphitheatre Parkway <br>
-						   Mountain View, CA 94043 US<br>
-						   <span>(123) 456-7890</span>
+					   <address>
+						   Lynn Michiels<br>
+						   Mereldreef 1 <br>
+						   3220 Holsbeek<br>
+						   <span>+32 489 114526</span>
+                        </address>
 					   </p>
 
 				   </div>
 
+                      <div class="location-map">
+                        <div id="mapCanvas" class="map-canvas"></div>
+                
+                 </div>
+<!--
                <div class="widget widget_tweets">
 
                   <h4 class="widget-title">Latest Tweets</h4>
@@ -839,6 +845,7 @@ readfile('files/English_Cv_Michiels_Lynn.pdf');
                   </ul>
 
 		         </div>
+-->
 
             </aside>
 
@@ -857,17 +864,17 @@ readfile('files/English_Cv_Michiels_Lynn.pdf');
 
             <ul class="social-links">
                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+<!--               <li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+<!--               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>-->
                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-               <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+<!--               <li><a href="#"><i class="fa fa-instagram"></i></a></li>-->
+<!--               <li><a href="#"><i class="fa fa-dribbble"></i></a></li>-->
                <li><a href="#"><i class="fa fa-skype"></i></a></li>
             </ul>
 
             <ul class="copyright">
-               <li>&copy; Copyright 2014 CeeVee</li>
-               <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>   
+               <li>&copy; Cv Michiels Lynn 2018</li>
+<!--               <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>   -->
             </ul>
 
          </div>
@@ -880,15 +887,39 @@ readfile('files/English_Cv_Michiels_Lynn.pdf');
 
    <!-- Java Script
    ================================================== -->
+<!--
    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-
+   <script src="bootstrap/js/bootstrap.min.js"></script>
+   <script src="js/wow.min.js"></script>
+   <script src="js/jquery.countTo.js"></script>
+   <script src="js/jquery.inview.min.js"></script>
    <script src="js/jquery.flexslider.js"></script>
    <script src="js/waypoints.js"></script>
    <script src="js/jquery.fittext.js"></script>
    <script src="js/magnific-popup.js"></script>
    <script src="js/init.js"></script>
+   <script src="js/jquery.easypiechart.js"></script>
+   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+     <script src="js/script.js"></script>
+   
+-->
+<script src="assets/js/jquery.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.stellar.min.js"></script>
+	<script src="assets/js/jquery.sticky.js"></script>
+  <script src="assets/js/smoothscroll.js"></script>
+	<script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/jquery.countTo.js"></script>
+  <script src="assets/js/jquery.inview.min.js"></script> 
+  <script src="assets/js/jquery.easypiechart.js"></script>
+  <script src="assets/js/jquery.shuffle.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
+  <script src="assets/js/jquery.fitvids.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+  <script src="assets/js/scripts.js"></script>
 
 </body>
 

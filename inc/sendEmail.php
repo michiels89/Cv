@@ -1,7 +1,17 @@
 ﻿<?php
 
-// Replace this with your own email address
-$siteOwnersEmail = 'user@website.com';
+//download cv
+
+if(isset($_GET['action']) && $_GET['action'] == 'download'){
+header('Content-disposition:attachment; filename=English_Cv_Michiels_Lynn.pdf');
+header('Content-type:application/pdf');
+readfile('../files/English_Cv_Michiels_Lynn.pdf');
+   download('../files/English_Cv_Michiels_Lynn');
+    }
+
+//send mail
+    
+$siteOwnersEmail = 'michiels89@hotmail.com';
 
 
 if($_POST) {
@@ -10,6 +20,8 @@ if($_POST) {
    $email = trim(stripslashes($_POST['contactEmail']));
    $subject = trim(stripslashes($_POST['contactSubject']));
    $contact_message = trim(stripslashes($_POST['contactMessage']));
+   $error = [];
+   $message= "";
 
    // Check Name
 	if (strlen($name) < 2) {
