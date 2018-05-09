@@ -100,7 +100,7 @@ header .social li {
    padding: 0;
 }
 header .social li a { color: #fff; }
-header .social li a:hover { color: #11ABB0; }
+header .social li a:hover { color: #F06000; }
 
 /* scrolldown link */
 header .scrolldown a {
@@ -122,7 +122,7 @@ header .scrolldown a {
    -o-transition: all .3s ease-in-out;
    transition: all .3s ease-in-out;
 }
-header .scrolldown a:hover { color: #11ABB0; }
+header .scrolldown a:hover { color: #F06000; }
 
 /* primary navigation
 --------------------------------------------------------------------- */
@@ -199,7 +199,7 @@ ul#nav li.current a { color: #F06000; }
 }
 
 #about a, #about a:visited  { color: #fff; }
-#about a:hover, #about a:focus { color: #11ABB0; }
+#about a:hover, #about a:focus { color: #F06000; }
 
 #about h2 {
    font: 22px/30px 'opensans-bold', sans-serif;
@@ -427,13 +427,13 @@ ul#nav li.current a { color: #F06000; }
     text-align: center;
     font-size: 50px;
     line-height: 50px;
-    color: #2c3e50;
+    color: #fff;
     position: relative;
 }
 
 .section-title::after {
     content: "";
-    background: url(../../assets/images/section-divider.png) no-repeat 0 0;
+    background: url(../images/section-divider.png) no-repeat 0 0;
     height: 15px;
     width: 113px;
     position: absolute;
@@ -449,6 +449,7 @@ ul#nav li.current a { color: #F06000; }
 -----------------------------------------------------------*/
 .resume-title h3{
     text-align: center;
+    color: #F06000;
 }
 .resume-section > div > div{
     margin-bottom: 60px;
@@ -458,6 +459,7 @@ ul#nav li.current a { color: #F06000; }
 }
 .resume-title{
     margin-bottom: 30px;
+  
 }
 .timeline {
     position: relative;
@@ -595,6 +597,7 @@ ul#nav li.current a { color: #F06000; }
 .timeline-heading h3 {
     font-size: 20px;
     line-height: 28px;
+    
 }
 .timeline-heading span{
     display: block;
@@ -652,7 +655,7 @@ ul#nav li.current a { color: #F06000; }
 }
 
 .timeline>li .timeline-content:hover {
-    background: #68c3a3;
+    background: #F06000;
     color: #fff;
 }
 
@@ -685,7 +688,7 @@ ul#nav li.current a { color: #F06000; }
     transition: all 400ms;
 }
 .timeline>li.timeline-inverted .timeline-panel:hover::before {
-    border-right: 12px solid #68c3a3;
+    border-right: 12px solid #F06000;
     border-left: 0;
 }
 
@@ -707,7 +710,7 @@ ul#nav li.current a { color: #F06000; }
     transition: all 400ms;
 }
 .timeline>li .timeline-panel:hover::after {
-    border-left: 12px solid #68c3a3;
+    border-left: 12px solid #F06000;
 }
 
 .timeline>li.timeline-inverted .timeline-panel::after {
@@ -720,7 +723,7 @@ ul#nav li.current a { color: #F06000; }
     transition: all 400ms;
 }
 .timeline>li.timeline-inverted .timeline-panel:hover::after {
-    border-right: 12px solid #68c3a3;
+    border-right: 12px solid #F06000;
     border-left: 0;
 }
 
@@ -735,6 +738,9 @@ ul#nav li.current a { color: #F06000; }
 }
 
 
+}
+.timeline-body ul li{
+    list-style-type: square;
 }
 
 
@@ -751,7 +757,7 @@ ul#nav li.current a { color: #F06000; }
     color: #fff;
     margin-bottom: 110px;  
 }
-.skills-section .section-title h2{
+.skills-section .section-title h2 {
     color: #fff;
 }
 .skill-title {
@@ -759,10 +765,11 @@ ul#nav li.current a { color: #F06000; }
     float: left;
 }
 .skill-title h3{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     margin-top: -6px;
     text-transform: capitalize;
+    color: #fff;
 }
 
 
@@ -782,7 +789,7 @@ ul#nav li.current a { color: #F06000; }
 }
 
 .progress-bar {
-    background-color: #68c3a3;
+    background-color: #F06000;
 }
 .progress-bar span{
     position: absolute;
@@ -798,8 +805,9 @@ ul#nav li.current a { color: #F06000; }
 }
 
 
-.skill-chart h3 {
+.skill-chart h2 {
     margin-top: 20px;
+    color:#fff;
 }
 
 .our-progress{
