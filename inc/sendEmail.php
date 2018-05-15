@@ -12,7 +12,7 @@ readfile('../files/English_Cv_Michiels_Lynn.pdf');
 //send mail
     
 $siteOwnersEmail = 'michiels89@hotmail.com';
-
+//(isset($_GET['action']) && $_GET['action'] == 'sendMessage')
 
 if($_POST) {
 
