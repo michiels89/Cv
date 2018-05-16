@@ -1021,10 +1021,10 @@ ul#nav li.current a { color: #F06000; }
 /* ------------------------------------------------------------------ */
 
 #contact {
-   background: #191919;
+   background: #2B2B2B;
    padding-top: 96px;
    padding-bottom: 102px;
-   color: #636363;
+   color: #7A7A7A;
 }
 #contact .section-head { margin-bottom: 42px; }
 
@@ -1095,7 +1095,7 @@ ul#nav li.current a { color: #F06000; }
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	color:#fff;
-   background: #0D0D0D;
+   background: #525252;
 	border: none;
    cursor: pointer;
    height: auto;
@@ -1113,7 +1113,7 @@ ul#nav li.current a { color: #F06000; }
 }
 #message-warning, #message-success {
    display: none;
-	background: #0F0F0F;
+	background: #525252;
 	padding: 24px 24px;
 	margin-bottom: 36px;
    width: 65%;
@@ -1134,23 +1134,6 @@ ul#nav li.current a { color: #F06000; }
 }
 
 
-/* Twitter Feed */
-#twitter {
-   margin-top: 12px;
-   padding: 0;
-}
-#twitter li {
-   margin: 6px 0px 12px 0;
-   line-height: 30px;
-}
-#twitter li span {
-   display: block;
-}
-#twitter li b a {
-   font: 13px/36px 'opensans-regular', Sans-serif;
-   color: #474747 !important;
-   border: none;
-}
 
 /*MAP*/
 .location-map {
