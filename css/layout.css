@@ -75,6 +75,7 @@ header .banner-text h3 {
    margin: 0 auto;
    width: 70%;
    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+/*    background-color: #e1e1e1;*/
 }
 header .banner-text h3 span,
 header .banner-text h3 a {
@@ -183,7 +184,11 @@ ul#nav li a {
 	transition: color .2s ease-in-out;
 }
 
-ul#nav li a:active { background-color: transparent !important; }
+ul#nav li a:active,
+ul#nav li a:hover{
+    background-color: transparent !important;
+                        color: #F06000;
+}
 ul#nav li.current a { color: #F06000; }
 
 
@@ -911,6 +916,7 @@ ul#nav li.current a { color: #F06000; }
    padding-left: 0;
    position: relative;
    text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
+    height: 30rem;
 }
 #testimonials blockquote:before { content: none; }
 #testimonials blockquote p {
@@ -1142,7 +1148,7 @@ ul#nav li.current a { color: #F06000; }
     border-bottom: 3px double #eee;
 }
 .map-canvas {
-    height: 350px;
+    height: 35rem;
 }
 
 /* ------------------------------------------------------------------ */
