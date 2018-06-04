@@ -1,4 +1,11 @@
-
+<?php
+session_start();
+if(!isset($_SESSION['teller'])){
+    $_SESSION['teller'] = 1;
+}else{
+$_SESSION['teller'] ++;
+}
+?>
 <!DOCTYPE html>
 <!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
@@ -960,6 +967,7 @@ Do not hesitate to send me a message!!
 
             <ul class="copyright">
                <li>Cv Michiels Lynn 2018<a href="http://www.Styleshout.com">&copy;</a></li>
+               <li>Counter: <?= $_SESSION['teller']?></li>
 
             </ul>
 
