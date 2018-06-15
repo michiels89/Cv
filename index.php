@@ -620,16 +620,16 @@ $_SESSION['teller'] ++;
 
                   </div>
           		</div> <!-- item end -->
-<!--
+
 
                <div class="columns portfolio-item">
                   <div class="item-wrap">
 
                      <a href="#modal-08" title="">
-                        <img alt="" src="images/portfolio/retrocam.jpg">
+                        <img alt="" src="images/portfolio/TestPHPFundamentals.png">
                         <div class="overlay">
                            <div class="portfolio-item-meta">
-          					      <h5>Retrocam</h5>
+          					      <h5>Guestbook</h5>
                               <p>Web Development</p>
           					   </div>
                         </div>
@@ -637,8 +637,11 @@ $_SESSION['teller'] ++;
                      </a>
 
                   </div>
-          		</div>   item end 
--->
+          		</div> 
+<!--          		  item end -->
+
+
+
 
             </div> <!-- portfolio-wrapper end -->
 
@@ -674,12 +677,11 @@ $_SESSION['teller'] ++;
 
 		      <div class="description-box">
 			      <h4>Fonto Nova Admin</h4>
-<!--			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>-->
                <span class="categories"><i class="fa fa-tag"></i>Web Development, Webdesign</span>
 		      </div>
 
             <div class="link-box">
-<!--               <a href="http://www.behance.net">Details</a>-->
+<!--               <a href="">Details</a>-->
 		         <a class="popup-modal-dismiss">Close</a>
             </div>
 
@@ -771,24 +773,25 @@ $_SESSION['teller'] ++;
 
 	      </div><!-- modal-07 End -->
 
-<!--
+
          <div id="modal-08" class="popup-modal mfp-hide">
 
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-retrocam.jpg" alt="" />
+		      <img class="scale-with-grid" src="images/portfolio/modals/TestPHPFundamentals.png" alt="" />
 
 		      <div class="description-box">
-			      <h4>Retrocam</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Webdesign, Photography</span>
+			      <h4>Test PHP fundamentals</h4>
+			      <p>Guestbook</p>
+               <span class="categories"><i class="fa fa-tag"></i>Web Development</span>
 		      </div>
 
             <div class="link-box">
-               <a href="http://www.behance.net">Details</a>
+               <a href="http://michiels-lynn.be/GastenBoek/index.php">Details</a>
 		         <a class="popup-modal-dismiss">Close</a>
             </div>
 
-	      </div> modal-01 End 
--->
+	      </div>
+<!--	       modal-08 End -->
+
 
 
       </div> <!-- row End -->
